@@ -1,0 +1,25 @@
+@use "../scss/variables" as*;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  color: $color-primary;
+  font-weight: 700;
+  gap: 2rem;
+  &__logo {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  & > *:first-child {
+    margin-right: auto;
+  }
+  & a {
+    text-decoration: none;
+    color: $color-primary;
+    &.active,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
