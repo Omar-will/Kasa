@@ -1,17 +1,17 @@
 import React from 'react'
-import Banner from "../layout/Banner";
-import { ApartmentDescription } from '../components/ApartmentDescription';
+import { DescriptionPanel } from '../components/DescriptionPanel';
 import "./About.scss";
+import ImageBannerAbout from '../components/ImageBannerAbout';
 
 function About() {
   return (
     <>
-     <Banner /> 
+     <ImageBannerAbout /> 
      <div className='about__container'>
-     <ApartmentDescription />
-     <ApartmentDescription />
-     <ApartmentDescription />
-     <ApartmentDescription /> 
+     <DescriptionPanel />
+     <DescriptionPanel />
+     <DescriptionPanel />
+     <DescriptionPanel /> 
      </div>
     </>
   );

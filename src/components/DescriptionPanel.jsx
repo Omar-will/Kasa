@@ -1,9 +1,9 @@
 import React from "react";
-import "./ApartmentDescription.scss";
+import "./DescriptionPanel.scss";
 
-export function ApartmentDescription() {
+export function DescriptionPanel() {
     return (
-<div className="apartment__description">
+<div className="description__panel">
         <p className="description__header">
           <span>Description</span>
           <i className="fa-solid fa-chevron-up"></i>

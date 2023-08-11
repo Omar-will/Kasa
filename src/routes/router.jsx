@@ -6,6 +6,7 @@ import Footer from "../layout/Footer";
 import Main from "../layout/Main";
 import Navbar from "../components/Navbar";
 import About from "../pages/About";
+import ErrorPageNotFound from "../pages/ErrorPageNotFound";
 
 const HeaderFooterLayout = () => {
   return (
@@ -22,7 +23,7 @@ const HeaderFooterLayout = () => {
 export const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    errorElement: <h1>404 not found</h1>,
+    errorElement: <ErrorPageNotFound />,
     children: [
       {
         path: "/",
