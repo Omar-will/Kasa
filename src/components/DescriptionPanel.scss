@@ -1,8 +1,8 @@
 @use"../scss/variables.scss" as*;
 
 .description__panel {
-    margin-top: 1rem;
-    flex-basis: 50%;
+    margin-top: 3rem;
+    flex-basis: 100%;
     overflow: hidden;
     p {
         margin-block: 0;
@@ -12,6 +12,7 @@
     color: $color-tertiary;
     padding: 0.2em 1em;
     border-radius: 0.7rem;
+    height: 52px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +24,7 @@
     .description__content {
         background-color: $gray;
         color: $color-primary;
-        padding: 1rem;
+        padding: 2rem;
         border-radius: 0.7rem;
         position: relative;
         top: -0.5rem;
@@ -31,9 +32,12 @@
         transition: transform 0.3s ease-in-out;
     &.hidden {
       transform: translateY(-100%);
+      margin-top: -100px;
+      
     }
     &.visible {
       transform: translateY(0);
+      min-height: 172px;
     }
     }
 }
