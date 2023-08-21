@@ -2,12 +2,15 @@
 
 .apartment-page {
     color: $color-primary;
-
     .apartment__description__area {
         display: flex;
         gap: 2rem;
+        margin-left: -4rem;
+        margin-right: -4rem;
         @media screen and (width <= 768px){
             flex-direction: column;
+            margin-left: 0rem;
+            margin-right: 0rem;
         }
     }
 }

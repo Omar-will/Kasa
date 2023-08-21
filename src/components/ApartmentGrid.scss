@@ -2,14 +2,20 @@
 
 .grid {
     background-color: $grid-background;
-    margin-top: 2rem;
-    min-height: 50vh;
-    border-radius: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-column-gap: 5rem;
+    grid-row-gap: 50px;
+    justify-content: center;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 50px;
+    padding-left: 25px;
+    position: relative;  
+    // padding-inline: 2rem;
+    place-items: center;
+    
     & > * {
         width: 100%;
         max-width: 20rem;
@@ -20,6 +26,8 @@
     .grid {
         justify-content: center;
         background-color: $grid-background-light;
-        padding: 0;
+        // padding: 0;
+        margin: 0 auto;
+        
     }
 }

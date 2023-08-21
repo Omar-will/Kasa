@@ -5,9 +5,13 @@
     min-height: 180px;
     max-width: 100%;
     margin: auto;
+    margin-bottom: 2rem;
     border-radius: 1rem;
     display: grid;
     place-items: center;
     background-size: cover;
     background-position: center center;
+    @media screen and (width <= 768px) {
+    height: 311px;
+    }
 }

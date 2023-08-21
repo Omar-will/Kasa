@@ -11,16 +11,22 @@
     background-size: cover;
     
     img {
-        width: 320px;
-        height: 213px;
+        width: 340px;
+        height: 340px;
         object-fit: cover;
         border-radius: 1rem;
+        margin: 0 auto;
         box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
         filter: brightness(0.9);
+        @media (max-width: 768px) {
+          
+           
+ 
+          }
     }
     @media screen and (width <= 768px) {
         .apartment {
-            flex-basis: 100%;
+            flex-basis: 100%; 
         }  
     }
     & &__subtitle {
