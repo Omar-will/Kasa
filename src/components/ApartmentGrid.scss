@@ -4,14 +4,16 @@
     background-color: $grid-background;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    // grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
     grid-column-gap: 5rem;
-    grid-row-gap: 50px;
+    grid-row-gap: 80px;
     justify-content: center;
     border-radius: 25px;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 50px;
-    padding-left: 25px;
+    padding: 80px;
+    padding-bottom: 60px;
+    padding-left: 60px;
     position: relative;  
     // padding-inline: 2rem;
     place-items: center;
@@ -22,12 +24,15 @@
     }
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width <= 1076px) {
     .grid {
         justify-content: center;
         background-color: $grid-background-light;
         // padding: 0;
         margin: 0 auto;
-        
+        display: block;
+        @media screen and (width <= 478px) {
+            display:grid; 
+        } 
     }
 }
