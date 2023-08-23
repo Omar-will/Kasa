@@ -3,8 +3,8 @@
 .grid {
     background-color: $grid-background;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    // grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+    // grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
     grid-column-gap: 5rem;
     grid-row-gap: 80px;
     justify-content: center;
@@ -12,7 +12,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     padding-left: 60px;
     position: relative;  
     // padding-inline: 2rem;
@@ -24,7 +24,7 @@
     }
 }
 
-@media screen and (width <= 1076px) {
+@media screen and (width <= 900px) {
     .grid {
         justify-content: center;
         background-color: $grid-background-light;

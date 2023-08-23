@@ -19,7 +19,7 @@
         margin: 0 auto;
         box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
         filter: brightness(0.9);
-        @media (max-width: 1076px) and (min-width: 488px) {
+        @media (max-width: 1076px) and (min-width: 288px) {
             width: 120%;
             margin-bottom: 40px;
             margin-left: -2.5rem;  
@@ -39,12 +39,12 @@
         margin-block-end: 1rem;
         color: $color-tertiary;
         position: absolute;
-        @media (max-width: 1076px) and (min-width: 488px) {
-            margin-left: 20px;
+        @media (max-width: 1076px) and (min-width: 388px) {
+            margin-left: 0;
             margin-bottom: 60px;
         }
         @media screen and (width <= 388px) {
-            margin-left: 10px;
+            margin-left: 0;
             margin-bottom: 0;
         } 
     }

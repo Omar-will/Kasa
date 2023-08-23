@@ -59,8 +59,8 @@
     }
     &.visible {
       transform: translateY(0);
-      // min-height: 172px;
-      min-height: 100%;
+      min-height: 172px;
+      height: auto;
       margin-left: 4rem;
       margin-right: 4rem;
       @media screen and (width <= 768px){
