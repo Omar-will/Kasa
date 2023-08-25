@@ -7,7 +7,7 @@ function Footer() {
       <div className='footer__logo'>
       <img src="kasa black.jpg" alt="Logo" />
       </div>
-      <div className='footer__text'>© 2020 Kasa. All rights reserved</div>
+      <div className='footer__text'>© 2020 Kasa. All <span>rights reserved</span></div>
     </div>
   )
 }

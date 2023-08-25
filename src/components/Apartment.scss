@@ -19,13 +19,18 @@
         margin: 0 auto;
         box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
         filter: brightness(0.9);
-        @media (max-width: 1076px) and (min-width: 288px) {
+        @media (max-width: 930px) and (min-width: 288px) {
             width: 120%;
             margin-bottom: 40px;
-            margin-left: -2.5rem;  
+            margin-left: -2rem;  
         }
+        @media (max-width: 580px) and (min-width: 288px) {
+            width: 130%;
+        }
+
         @media screen and (width <= 388px) {
-            margin-bottom: -20px;
+            
+            margin-left: -3rem; 
         }   
     }
     @media screen and (width <= 768px) {
@@ -39,13 +44,13 @@
         margin-block-end: 1rem;
         color: $color-tertiary;
         position: absolute;
-        @media (max-width: 1076px) and (min-width: 388px) {
-            margin-left: 0;
+        @media (max-width: 930px) and (min-width: 388px) {
+            margin-left: -10px;
             margin-bottom: 60px;
         }
         @media screen and (width <= 388px) {
-            margin-left: 0;
-            margin-bottom: 0;
+            margin-left: -20px;
+            margin-bottom: 50px;
         } 
     }
     .apartment__link {
