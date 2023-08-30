@@ -3,7 +3,6 @@
 .grid {
     background-color: $grid-background;
     display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
     grid-column-gap: 5rem;
     grid-row-gap: 80px;
@@ -15,7 +14,6 @@
     padding-bottom: 70px;
     padding-left: 50px;
     position: relative;  
-    // padding-inline: 2rem;
     place-items: center;
     
     
@@ -36,8 +34,6 @@
         @media (max-width: 1058px) and (min-width: 900px) {
             .grid {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                // padding-left: 10px;
-                // padding-right: 10px;
             }
 }
     }
@@ -46,7 +42,6 @@
     .grid {
         justify-content: center;
         background-color: $grid-background-light;
-        // padding-left: 60px;
         margin: 0 auto;
         display: block;
         @media screen and (width <= 395px) {

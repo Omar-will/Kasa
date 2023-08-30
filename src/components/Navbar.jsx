@@ -6,13 +6,15 @@ function Navbar() {
   return (
     <nav className="navbar">
         <div className="navbar__logo">
+        <NavLink to="/">
             <img src="kasa-logo.png" alt="Logo" />
+            </NavLink>
         </div>
         <NavLink to="/">
           <div>Acceuil</div>
           </NavLink>
         <NavLink to="/about">
-        <div>A propos</div>
+        <div>A Propos</div>
         </NavLink>
     </nav>
   )
