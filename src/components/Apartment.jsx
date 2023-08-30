@@ -3,7 +3,7 @@ import "./Apartment.scss";
 import { Link } from "react-router-dom";
 
 function Apartment(props) {
-  // console.log("props dans apartment:", props);
+
   return (
     <Link 
     to="/flat" 
