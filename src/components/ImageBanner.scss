@@ -37,7 +37,7 @@
      bottom: -2rem;
      text-align: center;
      @media screen and (width <= 768px){
-      bottom: -1rem;
+      display: none;
       }
   }
   .image__container {
