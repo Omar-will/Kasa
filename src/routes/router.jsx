@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter , Outlet } from "react-router-dom";
 import Homepage from "../pages/Homepage";
 import ApartmentPage from "../pages/ApartmentPage";
 import Footer from "../layout/Footer";
