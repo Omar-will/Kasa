@@ -5,6 +5,7 @@ import { ApartmentHeader } from "../components/ApartmentHeader";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import { useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
+
 function ApartmentPage() {
   const location = useLocation();
   const [flat, setFlat] = useState(null);
@@ -16,12 +17,13 @@ function ApartmentPage() {
       .then((res) => res.json())
       .then((flats) => {
         const flat = flats.find(
-          (flat) => flat.id === location.state.apartmentId
+          (flat) => flat.id === (location.state?.apartmentId ?? "")
         );
         setFlat(flat);
       })
       .catch(console.error);
   }
+      
   if (flat == null) return <div>Loading...</div>;
   return (
     <div className="apartment-page">
