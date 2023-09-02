@@ -16,7 +16,6 @@ function ApartmentPage() {
   }, [id]);
 
   function fetchApartmentData(id) {
-    // Recherchez l'appartement correspondant dans les données importées
     const apartment = apartmentData.find((apartment) => apartment.id === id);
     setFlat(apartment);
   }
