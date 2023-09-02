@@ -13,7 +13,7 @@ const HeaderFooterLayout = () => {
     <>
       <Navbar />
       <Main>
-      <Outlet />
+        <Outlet />
       </Main>
       <Footer />
     </>
@@ -27,16 +27,16 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homepage />
+        element: <Homepage />,
       },
       {
-        path: "/flat",
-        element: <ApartmentPage />
+        path: "/flat/:id",
+        element: <ApartmentPage />,
       },
       {
         path: "/about",
-        element: <About />
-      }
-    ]
-  }
+        element: <About />,
+      },
+    ],
+  },
 ]);

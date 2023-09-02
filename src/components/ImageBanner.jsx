@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./ImageBanner.scss";
 
 export function ImageBanner(props) {
@@ -24,22 +24,22 @@ export function ImageBanner(props) {
   };
 
   return (
-    <div className='image__banner'>
-      <div className='image__container'>
+    <div className="image__banner">
+      <div className="image__container">
         {pictures.map((pic, i) => (
           <img key={pic} src={pic} alt="" className={getClassName(i)}></img>
-          ))}
-       </div>
-       {pictures.length > 1 && (
+        ))}
+      </div>
+      {pictures.length > 1 && (
         <div>
-          <button className='btn btn-next' onClick={moveToNext}>
-            <i className='fa-solid fa-chevron-right'></i>
+          <button className="btn btn-next" onClick={moveToNext}>
+            <i className="fa-solid fa-chevron-right"></i>
           </button>
-          <span className='slide-counter'>
+          <span className="slide-counter">
             {currentPicture + 1}/{pictures.length}
           </span>
-          <button className='btn btn-previous' onClick={moveToPrevious}>
-            <i className='fa-solid fa-chevron-left'></i>
+          <button className="btn btn-previous" onClick={moveToPrevious}>
+            <i className="fa-solid fa-chevron-left"></i>
           </button>
         </div>
       )}
