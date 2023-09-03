@@ -5,7 +5,7 @@ import { ApartmentHeader } from "../components/ApartmentHeader";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import apartmentData from "../../db.json";
-import ErrorPageNotFound from "./ErrorPageNotFound"; // Importez le composant ErrorPageNotFound
+
 
 function ApartmentPage() {
   const navigate = useNavigate();
@@ -20,7 +20,6 @@ function ApartmentPage() {
   function fetchApartmentData(id) {
     const apartment = apartmentData.find((apartment) => apartment.id === id);
     if (!apartment) {
-      // Affichez directement le composant ErrorPageNotFound si l'appartement n'existe pas
       navigate("/error-page-not-found");
     } else {
       setFlat(apartment);
