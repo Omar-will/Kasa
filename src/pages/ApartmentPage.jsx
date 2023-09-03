@@ -3,10 +3,12 @@ import "./ApartmentPage.scss";
 import { ImageBanner } from "../components/ImageBanner";
 import { ApartmentHeader } from "../components/ApartmentHeader";
 import { DescriptionPanel } from "../components/DescriptionPanel";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams, useNavigate } from "react-router-dom";
 import apartmentData from "../../db.json";
+import ErrorPageNotFound from "./ErrorPageNotFound"; // Importez le composant ErrorPageNotFound
 
 function ApartmentPage() {
+  const navigate = useNavigate();
   const location = useLocation();
   const [flat, setFlat] = useState(null);
   const { id } = useParams();
@@ -17,7 +19,12 @@ function ApartmentPage() {
 
   function fetchApartmentData(id) {
     const apartment = apartmentData.find((apartment) => apartment.id === id);
-    setFlat(apartment);
+    if (!apartment) {
+      // Affichez directement le composant ErrorPageNotFound si l'appartement n'existe pas
+      navigate("/error-page-not-found");
+    } else {
+      setFlat(apartment);
+    }
   }
 
   if (flat == null) return <div>Loading...</div>;
